@@ -9,30 +9,30 @@ const questions = [
         ]
     },
     {
-        question: "¿Qué ícono representa la opción Centrar?",
-        image: "images/2.png",
+        question: "¿Como se le llama tambien al pie de página?",
+        image: "logo remove.png",
         options: [
-            { text: "A", isCorrect: false },
-            { text: "B", isCorrect: true },
-            { text: "C", isCorrect: false }
+            { text: "Foter", isCorrect: false },
+            { text: "Footer", isCorrect: true },
+            { text: "Pages", isCorrect: false }
         ]
     },
     {
-        question: "¿Qué ícono representa la opción Alineación a la izquierda?",
-        image: "images/3.png",
+        question: "¿Cómo se le llama al encabezado?",
+        image: "logo remove.png",
         options: [
-            { text: "A", isCorrect: true },
+            { text: "Headher", isCorrect: false },
+            { text: "Header", isCorrect: true },
+            { text: "Encabezado", isCorrect: false }
+        ]
+    },
+    {
+        question: "¿Cuales son los apartados mas usados? Menciona 3.",
+        image: "4.1.png",
+        options: [
+            { text: "A", isCorrect: false },
             { text: "B", isCorrect: false },
-            { text: "C", isCorrect: false }
-        ]
-    },
-    {
-        question: "¿Qué ícono representa la opción Alineación a la derecha?",
-        image: "images/4.png",
-        options: [
-            { text: "A", isCorrect: false },
-            { text: "B", isCorrect: true },
-            { text: "C", isCorrect: false }
+            { text: "C", isCorrect: true }
         ]
     },
     {
@@ -81,17 +81,17 @@ const questions = [
         ]
     },
     {
-        question: "¿Qué ícono representa la opción Subrayar?",
-        image: "images/10.png",
+        question: "¿Qué significa estos iconos?",
+        image: "10.png",
         options: [
-            { text: "A", isCorrect: true },
-            { text: "B", isCorrect: false },
-            { text: "C", isCorrect: false }
+            { text: "SmarArt y Gráficos", isCorrect: true },
+            { text: "Formas y Gràfico", isCorrect: false },
+            { text: "Gráfico y Formas", isCorrect: false }
         ]
     },
     {
-        question: "¿Qué ícono representa la opción para cambiar color de letra?",
-        image: "images/11.png",
+        question: "¿Qué ícono representa la opción para crear una segunda hoja?",
+        image: "11.png",
         options: [
             { text: "A", isCorrect: false },
             { text: "B", isCorrect: false },
@@ -108,51 +108,55 @@ const questions = [
         ]
     },
     {
-        question: "¿Qué tipo de fuente es Arial?",
-        image: "images/13.png",
+        question: "¿En que apartado y menú va el siguiente icono?",
+        image: "13.png",
         options: [
-            { text: "Formal", isCorrect: true },
-            { text: "Informal", isCorrect: false }
+            { text: "Insertar - Tabla", isCorrect: false },
+            { text: "Tabla - Insertar", isCorrect: false },
+            { text: "Tablas - Insertar", isCorrect: true },
         ]
     },
     {
-        question: "¿Qué tipo de fuente es Times New Roman?",
-        image: "images/14.png",
+        question: "¿Para que sirve esta herramienta?",
+        image: "14.png",
         options: [
-            { text: "Formal", isCorrect: true },
-            { text: "Informal", isCorrect: false }
+            { text: "Manipula el texto de manera ordenada", isCorrect: false },
+            { text: "Manipula la fuente", isCorrect: false },
+            { text: "Manipula el texto de manera flexible", isCorrect: true},
         ]
     },
     {
-        question: "¿Qué tipo de fuente es?",
-        image: "images/15.png",
+        question: "¿Para que sirve esta herramienta?",
+        image: "15.png",
         options: [
-            { text: "Formal", isCorrect: false },
-            { text: "Informal", isCorrect: true }
+            { text: "Crea decoraciones", isCorrect: false },
+            { text: "Crea textos decorativos", isCorrect: true },
+            { text: "Crea textos bonitos", isCorrect: false}
         ]
     },
     {
-        question: "¿Qué tipo de fuente es?",
-        image: "images/16.png",
+        question: "¿Como mas se le llama a la siguiente herramienta?",
+        image: "16.png",
         options: [
-            { text: "Formal", isCorrect: true },
-            { text: "Informal", isCorrect: false }
+            { text: "Footer", isCorrect: true },
+            { text: "Header", isCorrect: false },
         ]
     },
     {
-        question: "¿Cuál es el apartado *Fuente*?",
-        image: "images/17.png",
+        question: "¿Como se les llama a estas herramientas?",
+        image: "17.png",
         options: [
-            { text: "A", isCorrect: true },
-            { text: "B", isCorrect: false }
+            { text: "Formas", isCorrect: false },
+            { text: "Ilustraciones", isCorrect: true }
         ]
     },
     {
-        question: "¿Cuál es el apartado *Párrafo*?",
-        image: "images/18.png",
+        question: "¿Para que sirve esta herramienta?",
+        image: "18.png",
         options: [
-            { text: "A", isCorrect: false },
-            { text: "B", isCorrect: true }
+            { text: "Iconos", isCorrect: true },
+            { text: "Plantas", isCorrect: false },
+            { text: "Animales", isCorrect: false}
         ]
     }
 ];
@@ -220,9 +224,9 @@ function showResult() {
     let finalScore = Math.round(score); // Redondear el puntaje al número entero más cercano
     let message = '';
     if (finalScore <= 10) {
-        message = 'Hay que mejorar 😕. Repíte los ejercicios para que ganes tu caramelito 🍬';
+        message = 'Hay que mejorar 😕. Repíte los ejercicios para que ganes tu caramelito.';
     } else if (finalScore <= 17) {
-        message = 'Poco a poco pero hay que seguir para adelante 💪🏻. Repíte los ejercicios para que ganes tu caramelito 🍬.';
+        message = 'Poco a poco pero hay que seguir para adelante 💪🏻. Repíte los ejercicios para que ganes tu caramelito.';
     } else if (finalScore <= 20) {
         message = '¡FELICITACIONES, TÓMA TU CARAMELITO 🍬!';
     }
@@ -235,7 +239,10 @@ function showResult() {
 
     if (finalScore >= 20) {
         const caramelito = document.getElementById('caramelito');
-        caramelito.addEventListener('click', () => createExplosion(caramelito));
+        caramelito.addEventListener('click', () => {
+            createExplosion(caramelito);
+            createCandyRain(); // Añadir la lluvia de caramelos
+        });
     }
 }
 
@@ -261,4 +268,53 @@ function createExplosion(caramelito) {
     }, 800);
 }
 
+function createCandyRain() {
+    const candyRainContainer = document.createElement('div');
+    candyRainContainer.style.position = 'fixed';
+    candyRainContainer.style.top = '0';
+    candyRainContainer.style.left = '0';
+    candyRainContainer.style.width = '100%';
+    candyRainContainer.style.height = '100%';
+    candyRainContainer.style.pointerEvents = 'none';
+    candyRainContainer.style.zIndex = '1000';
+    document.body.appendChild(candyRainContainer);
+
+    for (let i = 0; i < 50; i++) {
+        const candy = document.createElement('div');
+        candy.innerHTML = '🍬';
+        candy.style.position = 'absolute';
+        candy.style.top = `${Math.random() * -100}px`;
+        candy.style.left = `${Math.random() * 100}%`;
+        candy.style.fontSize = '24px';
+        candy.style.animation = `fall ${2 + Math.random() * 3}s linear infinite`;
+        candyRainContainer.appendChild(candy);
+    }
+
+    setTimeout(() => {
+        candyRainContainer.remove();
+    }, 5000);
+}
+
 showSlide(0);
+
+const style = document.createElement('style');
+style.innerHTML = `
+    @keyframes explode {
+        0% {
+            transform: translate(0, 0);
+        }
+        100% {
+            transform: translate(${Math.random() * 200 - 100}px, ${Math.random() * 200 - 100}px);
+            opacity: 0;
+        }
+    }
+    @keyframes fall {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(100vh);
+        }
+    }
+`;
+document.head.appendChild(style);
